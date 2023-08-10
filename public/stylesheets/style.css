@@ -1,0 +1,570 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.menu1 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(94, 169, 219);
+  position: absolute;
+  top: -100%;
+  transition: all ease 1s;
+}
+
+#nav {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+  justify-content: space-between;
+  padding: 0 1vw;
+  color: #3f70b5;
+  background: #ffffff;
+
+}
+
+#logo h1 {
+  font-size: 2.5vw;
+}
+
+#nav .nav_part1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20%;
+
+}
+
+#nav .nav_part2 {
+  display: flex;
+  gap: 1.5vw;
+  cursor: pointer;
+}
+
+#nav .nav_part2 a {
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+
+.nav_part2 button{
+  padding: 0.6vw 1.3vw;
+  background-color:#5b8fcb;
+  font-size: 1.2vw;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.7vw;
+  border: none;
+}
+.nav_part2 button a{
+  color: #000;
+}
+.nav_part2 h2{
+  display: none;
+}
+.nav_part2 {
+  /* position: relative; */
+  /* left: 200px; */
+  text-decoration: none;
+
+}
+
+.nav_part2 a:hover {
+  color: #2c2f3a;
+
+}
+#nav img {
+  height: 5vw;
+  width: 5vw;
+
+}
+
+#nav .nav_part1 img:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+
+}
+
+#toggel{
+  display: none;
+}
+h1:hover {
+  color: #5b8fcb;
+}
+
+.page1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.left {
+  height: 100%;
+  width: 55%;
+  background: rgb(255, 255, 255);
+  padding: 12vw 6vw;
+
+}
+
+.left h1 {
+  font-size: 3.4vw;
+  line-height: 4vw;
+  width: 100%;
+  font-weight: 700;
+}
+
+.left p {
+
+  font-size: 1.1vw;
+  font-weight: 500;
+  width: 90%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 500;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+  color: #617184;
+
+}
+
+.left button {
+  padding: 1.1vw 2.5vw;
+  background-color: #3f70b5;
+  border-radius: 0.8vw;
+  font-size: 1.3vw;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.left span {
+  color: #5b8fcb;
+}
+
+.right {
+  height: 100%;
+  width: 45%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.right img{
+  max-width: 100%;
+  height: auto;
+  margin-top: 8%;
+  /* object-fit: cover; */
+}
+
+/* page2 */
+
+.page2 {
+  width: 100%;
+  height: 100%;
+  /* background-color: #000000;
+  overflow: hidden;
+ background-image: url("https://images.unsplash.com/photo-1611689102033-7f9e0a8eb851?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size:cover; */
+}
+
+.page2 .container1 h1{
+
+  margin: 2vmax 2vmax 2vmax 2vmax ;
+  padding: 10px;
+  padding-top: 10%;
+  margin-top: 10px;
+
+}
+/* search */
+.page2 form {
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+form {
+  width: 400px;
+  height: 50px;
+
+}
+
+input {
+  padding: 4px 10px;
+  border: 0;
+  font-size: 16px;
+}
+
+.page2 .search {
+  width: 75%;
+}
+
+.page2 .submit {
+  width: 120px;
+  height: 50px;
+  margin-top: 6px;
+  background-color: #1c87c9;
+  color: #ffffff;
+}
+
+/* page2 container 2 */
+
+.container2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.container2 img:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.page2 .img_box {
+  width: 18vmax;
+  padding: 1em;
+  box-sizing: border-box;
+  display: block;
+}
+
+.page2 .img_box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: fill;
+  border-radius: 5%;
+}
+
+
+.container2 button{
+  width: fit-content;
+  padding: 1vw 1.8vw;
+  font-size: 1.1vw;
+  margin-top: 2vw;
+  margin-left: 2.8vw;
+  border-radius: 1.4vmax;
+  background-color: #609bdf;
+  cursor: pointer;
+}
+.container2 button a{
+  text-decoration: none;
+}
+
+.container2 button:hover{
+  background: #44cb1b;
+  background-color: #f9ab19;
+}
+.container button:active{
+  background-color: khaki;
+box-shadow: 8px 8px 8px black;
+}
+
+/* page3 */
+
+.page3 {
+  height: 70%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.left3{
+  width: 50%;
+  height: 100%; 
+
+}
+.page3 .left3 img{
+  margin-top: -4.9vw;
+}
+.right3 {
+  width: 50%;
+  height: 100%;
+  margin-top: -45vw;
+  margin-left: 45%;
+}
+#time{
+ margin-left: -100px;
+}
+
+.right3 p{
+  width: 100%;
+  font-size: 1vw;
+  text-align: justify;
+}
+.left3 {
+  max-width: 100%;
+  height: 100%;
+  margin-top: 13vw;
+}
+
+.left3 img{
+  max-width: 100%;
+  height: auto;
+  margin-top: 8%;
+  /* object-fit: cover; */
+  
+}
+
+
+.right3 h2 hr {
+  width: 14.2vw;
+  height: 2px;
+  margin-top: 1.1vw;
+  background-color: #000;
+}
+
+.right3 h1 hr {
+  width: 12.5vw;
+  height: 2px;
+  background-color: #000;
+}
+
+#time {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  
+
+}
+
+#time p {
+  margin-top: 2.5vw;
+  font-size: 1.5vw;
+  font-weight: 400;
+
+}
+
+
+/* page 4 */
+
+
+.page4 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.box4 {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+}
+
+.part1 {
+  width: 50%;
+  height: 100%;
+  background: #cd8e8e;
+  background-repeat: no-repeat;
+  background-image: url("https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg");
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.part2 {
+  width: 50%;
+  height: 100%;
+  background: #d8e7e4;
+}
+
+.part2 h1 {
+  margin-top: 160px;
+  margin-left: 210px;
+  font-size: 40px;
+}
+
+.part2 p {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/*footer  */
+footer {
+  width: 100%;
+  height: 100%;
+  background:#ffffff;
+  overflow: hidden;
+  
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin-top: 20px;
+}
+
+
+.container h3 {
+  font-size: 35px;
+  margin-bottom: 15px;
+
+}
+
+.container a {
+  text-decoration-line: none;
+  color: #000;
+  font-size: 25px;
+  text-decoration-style: none;
+
+}
+
+.div3 {
+  margin-left: 340px;
+  margin-top: 30px;
+}
+
+.copyright {
+  margin-left: 340px;
+}
+
+.icons {
+  margin-left: 44%;
+  margin-top: 10px;
+  font-size: 40px;
+  display: flex;
+  gap: 25px;
+}
+
+
+/* Appointment */
+.appointment {
+  width: 100%;
+  height: 100%;
+  margin-top: 0%;
+  overflow: hidden;
+  background-image: url("https://images.unsplash.com/photo-1612537784037-898eb4583c35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+
+
+}
+
+.container {
+  margin-top: 5vmax;
+}
+
+form {
+  width: 80%;
+  height: 90%;
+
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  padding: 5px;
+  /* Some padding */
+  border: 2px solid #cecbcb;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  /*Allow the user to vertically resize the textarea (not horizontally)*/
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.footer_container {
+  border-radius: 5px;
+  background-color:#ffffff;
+  padding: 20px;
+  
+}
+
+/* location */
+
+.location {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-image: url("https://images.unsplash.com/photo-1596541223130-5d31a73fb6c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80");
+}
+
+.map {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  padding: 100px;
+  margin-top: 20vmax;
+}
+
+/* Contact  */
+
+/* signin  */
+
+.signin{
+  
+  padding: 150px;
+ 
+}
+
+.signup{
+  
+  padding: 150px;
+ 
+}
+
+.profile{
+  padding-top: 15%;
+  padding-left: 43%;
+  padding-bottom: 23%;
+}

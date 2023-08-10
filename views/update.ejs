@@ -1,0 +1,17 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+   <h1 class="mb-5">SignUp Page</h1>
+   
+   <form class="signup m-auto mt-5" action="/update/<%= user._id%>" method="post">
+      <input class="form-control mb-3 w-50" type="email" placeholder="Enter Your Mail" name="email">
+      <input class="form-control mb-3 w-50" type="username"placeholder="Enter your Username" name="username">
+      <input class="form-control mb-3 w-50" type="password" placeholder="*******" name="password">
+    
+     <p class="text-center ">
+      <a href="/forget-password">Forget Password ?</a>
+    </p>
+      <button class="btn btn-primary w-20 ">Update</button>
+      <p>Already have account ? <a href="/signin"> Sign In</a></p>
+   </form>
+
+   <%- include("partials/footer")%>

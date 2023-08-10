@@ -1,0 +1,19 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+
+<h1 class="mb-5">SignUp Page</h1>
+   
+<form class="signin m-auto p-auto" action="/signin" method="post">
+      <h1>signIn</h1>
+      <input class="form-control mb-3 w-50" type="username"placeholder="Enter your Username" name="username">
+      <input class="form-control mb-3 w-50" type="password" placeholder="*******" name="password">
+
+      <p class="text-center">
+         <a href="/get-email">Forget Password ?</a>
+     </p>
+
+      <button class="btn btn-primary w-22">Sign In</button>
+      <p>You Not have an account ? <a href="/signup"> Sign Up</a></p>
+
+   </form>
+   <%- include("partials/footer")%>

@@ -1,0 +1,18 @@
+<%- include("partials/header")%>
+<%- include("partials/nav")%>
+<div class="profile">
+   <h1>User Profile</h1>
+   <h3>List of all users</h3>
+   <ul class="list-group w-25">                                                                                                       
+      <% users.forEach((user) =>{ %>
+         <li><%= user.username%>
+            <span>
+               <a href="/update/<%= user._id%>">✏️</a>
+               <a href="/delete/<%= user._id%>">❌</a>
+               <a href="/reset/<%= user._id%>"> 🔐</a>
+            </span>
+            </li>
+            <%})%>
+   </ul>
+</div>
+<%- include("partials/footer")%>

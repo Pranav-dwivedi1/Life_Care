@@ -1,0 +1,47 @@
+<%- include("partials/header")%>
+<div class="appointment">
+  <%- include("partials/nav")%>
+  <div class="container">
+    <form action="/appointment" method="post">
+      <h1>Book Your Appointment </h1>
+      <label for="fname"> Full Name</label>
+      <input type="text" id="fname" name="fullname" placeholder="Your name..">
+  
+      <label for="age">Age</label>
+      <input type="text" id="age" name="age" placeholder="Your last age..">
+  
+      <label for="mobile">Mobile no.</label>
+      <input type="text" id="mobile" name="mobile" placeholder="Your mobile no..">
+  
+      <label for="date"> Appointment Date:</label>
+      <input type="date" id="date" name="date">
+  
+
+<select name="Department" id="Department">
+  <option value="general">General Department</option>
+  <option value="emergency ">Emergency Department </option>
+  <option value="cardiology"> Cardiology Department</option>
+  <option value="neurology"> Neurology Department</option>
+  <option value="psychiatry">Psychiatry Department</option>
+  <option value="radiology">Radiology Department</option>
+  <option value="laboratory ">Laboratory Department</option>
+  <option value="rehabilitation ">Rehabilitation Department</option>
+</select>
+
+  
+      <label for="city">City</label>
+      <select id="city" name="city">
+        <option value="bhopal">Bhopal</option>
+        <option value="indore">Indore</option>
+        <option value="jabalpur">Jabalpur</option>
+      </select>
+  
+      <label for="Appointment for ">Appointment For... Write an issue</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+</div>
+  <%- include("partials/footer")%>
